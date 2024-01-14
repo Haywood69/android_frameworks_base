@@ -103,20 +103,37 @@ public class PixelPropsUtils {
     private static final String[] packagesToKeep = {
             PACKAGE_GPHOTOS,
             "com.google.android.apps.motionsense.bridge",
+            "com.google.android.MTCL83",
+            "com.google.android.apps.googleassistant",
+            "com.android.chrome",
+            "com.android.vending",
+            "com.google.android.UltraCVM",
+            "com.google.android.apps.GoogleCamera",
+            "com.google.android.GoogleCamera.Cameight",
+            "com.google.android.GoogleCamera.Go",
+            "com.google.android.GoogleCamera.Urnyx",
+            "com.google.android.GoogleCameraAsp",
+            "com.google.android.GoogleCameraCVM",
+            "com.google.android.GoogleCameraEng",
+            "com.google.android.GoogleCameraEng2",
+            "com.google.android.GoogleCameraGood",
+            "com.google.android.MTCL83",
+            "com.google.android.UltraCVM",
+            "com.google.android.euicc",
+            "com.google.android.as",
+            "com.google.android.dialer",
+            "com.google.ar.core",
+            "com.google.android.youtube",
+            "com.google.android.apps.youtube.kids",
+            "com.google.android.apps.youtube.music",
             "com.google.android.apps.pixelmigrate",
             "com.google.android.apps.recorder",
             "com.google.android.apps.restore",
+            "com.google.android.apps.wearables.maestro.companion",
+            "com.google.android.apps.subscriptions.red",
             "com.google.android.apps.tachyon",
             "com.google.android.apps.tycho",
-            "com.google.android.apps.wearables.maestro.companion",
-            "com.google.android.apps.youtube.kids",
-            "com.google.android.apps.youtube.music",
-            "com.google.android.as",
-            "com.google.android.dialer",
-            "com.google.android.euicc",
             "com.google.android.setupwizard",
-            "com.google.android.youtube",
-            "com.google.ar.core",
             "com.google.oslo"
     };
 
@@ -200,6 +217,11 @@ public class PixelPropsUtils {
 
     private static boolean isGoogleCameraPackage(String packageName) {
         return packageName.startsWith("com.google.android.GoogleCamera") ||
+            Arrays.asList(customGoogleCameraPackages).contains(packageName);
+    }
+
+    private static boolean isgoogleassistantPackage(String packageName) {
+        return packageName.startsWith("com.google.android.apps.googleassistant") ||
             Arrays.asList(customGoogleCameraPackages).contains(packageName);
     }
 
