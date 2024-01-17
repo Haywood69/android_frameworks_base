@@ -77,6 +77,7 @@ public class PixelPropsUtils {
             "com.amazon.avod.thirdpartyclient",
             "com.android.chrome",
             "com.breel.wallpapers20",
+            "com.google.android.dialer",
             "com.disney.disneyplus",
             "com.google.android.apps.customization.pixel",
             "com.google.android.apps.emojiwallpaper",
@@ -121,7 +122,6 @@ public class PixelPropsUtils {
             "com.google.android.UltraCVM",
             "com.google.android.euicc",
             "com.google.android.as",
-            "com.google.android.dialer",
             "com.google.ar.core",
             "com.google.android.youtube",
             "com.google.android.apps.youtube.kids",
@@ -217,11 +217,6 @@ public class PixelPropsUtils {
 
     private static boolean isGoogleCameraPackage(String packageName) {
         return packageName.startsWith("com.google.android.GoogleCamera") ||
-            Arrays.asList(customGoogleCameraPackages).contains(packageName);
-    }
-
-    private static boolean isgoogleassistantPackage(String packageName) {
-        return packageName.startsWith("com.google.android.apps.googleassistant") ||
             Arrays.asList(customGoogleCameraPackages).contains(packageName);
     }
 
