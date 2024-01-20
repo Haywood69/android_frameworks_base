@@ -77,7 +77,6 @@ public class PixelPropsUtils {
             "com.amazon.avod.thirdpartyclient",
             "com.android.chrome",
             "com.breel.wallpapers20",
-            "com.google.android.dialer",
             "com.disney.disneyplus",
             "com.google.android.apps.customization.pixel",
             "com.google.android.apps.emojiwallpaper",
@@ -91,7 +90,8 @@ public class PixelPropsUtils {
             "com.nhs.online.nhsonline",
             "com.nothing.smartcenter",
             "in.startv.hotstar",
-            "jp.id_credit_sp2.android"
+            "jp.id_credit_sp2.android",
+            "com.google.android.dialer",
     };
 
     private static final String[] customGoogleCameraPackages = {
@@ -108,6 +108,7 @@ public class PixelPropsUtils {
             "com.google.android.apps.googleassistant",
             "com.android.chrome",
             "com.android.vending",
+            "com.google.android.dialer",
             "com.google.android.UltraCVM",
             "com.google.android.apps.GoogleCamera",
             "com.google.android.GoogleCamera.Cameight",
